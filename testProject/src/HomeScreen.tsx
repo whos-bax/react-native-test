@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Button, StyleSheet, Text, View} from "react-native";
 
-function HomeScreen (): React.JSX.Element  {
+const HomeScreen = (): React.JSX.Element => {
     const [status, setStatus] = useState("");
     return <View style={styles.viewStyle}>
         <Text testID={"HomeText"}>{status}</Text>

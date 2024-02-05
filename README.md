@@ -16,9 +16,15 @@
 
 ### 순서
 #### 1. Unit Test
+> - `src/mathUtils.ts`
+> - `__test__/Unit.test.ts`
 #### 2. UI Test
 - update your snapshot with `npm test -u`
+> - `src/HomeScreen.tsx`
+> - `__test__/HomeScreen.test.tsx`
 #### 3. State Changes
+> - `src/HomeScreen.tsx`
+> - `__test__/HomeScreen.test.tsx`
 #### 4. Async Task
 #### 5. Axios
 #### 6. React Navigation
