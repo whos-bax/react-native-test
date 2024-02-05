@@ -4,9 +4,20 @@ import React from "react";
 import {it} from '@jest/globals';
 
 // Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+import renderer, {act} from 'react-test-renderer';
 import HomeScreen from "../src/HomeScreen.tsx";
 
+const tree =  renderer.create(<HomeScreen/>);
+
 it('renders correctly', () => {
-    renderer.create(<HomeScreen />);
+    expect(tree).toMatchSnapshot();
 });
+
+it("button Press", () => {
+    // press the button
+    const button = tree.root.findByProps({testID: "HomeButton"}).props;
+    act(() => button.onPress());
+    // expect text to equal "Button Pressed"
+    const text = tree.root.findByProps({testID: "HomeText"}).props;
+    expect(text.children).toEqual("Button Pressed")
+})

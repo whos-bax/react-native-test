@@ -7,12 +7,12 @@
 - jest: 29.6.3
 - @types/jest: 29.5.12
 - react-test-renderer: 18.2.0
+- @types/react-test-renderer: 18.0.0
 
 ### 설정
-
 1. [React Native Setup](https://reactnative.dev/docs/environment-setup)
 2. `npm i -D @types/jest`
-3.    `npm test`
+3. `npm test`
 
 ### 순서
 #### 1. Unit Test

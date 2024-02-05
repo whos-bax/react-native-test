@@ -1,8 +1,12 @@
-import React from "react";
-import {StyleSheet, View} from "react-native";
+import React, {useState} from "react";
+import {Button, StyleSheet, Text, View} from "react-native";
 
 function HomeScreen (): React.JSX.Element  {
-    return <View style={styles.viewStyle}></View>
+    const [status, setStatus] = useState("");
+    return <View style={styles.viewStyle}>
+        <Text testID={"HomeText"}>{status}</Text>
+        <Button testID={"HomeButton"} onPress={() => setStatus("Button Pressed")} title={`Status Button`}/>
+    </View>
 }
 
 const styles = StyleSheet.create({
