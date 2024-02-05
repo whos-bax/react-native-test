@@ -17,6 +17,7 @@
 ### 순서
 #### 1. Unit Test
 #### 2. UI Test
+- update your snapshot with `npm test -u`
 #### 3. State Changes
 #### 4. Async Task
 #### 5. Axios

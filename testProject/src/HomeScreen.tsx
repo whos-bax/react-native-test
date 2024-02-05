@@ -1,6 +1,7 @@
 import React from "react";
 import {StyleSheet, View} from "react-native";
-const HomeScreen = () => {
+
+function HomeScreen (): React.JSX.Element  {
     return <View style={styles.viewStyle}></View>
 }
 
